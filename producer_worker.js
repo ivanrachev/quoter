@@ -7,9 +7,9 @@ var JobMissile = quoterApp.JobMissile;
 var Configuration = new quoterApp.Configuration();
 
 /**
- * Seeder puts one job to the queue and exits.
+ * producer worker puts one job to the queue and exits.
  * @global
- * @name Seeder 
+ * @name producer worker
  */
 
 

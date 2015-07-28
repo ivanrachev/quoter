@@ -11,12 +11,12 @@ var JobDispatcher = quoterApp.JobDispatcher;
 var Configuration = new quoterApp.Configuration();
 
 /**
- * Worker connects to the database, and to beanstalkd and 
- * listens for new jobs. If a job becomes available, Worker 
+ * consumer_worker connects to the database, and to beanstalkd and 
+ * listens for new jobs. If a job becomes available, consumer_worker 
  * passes it off to {@link QuoteRetrieverHandler} for 
- * execution. Worker can execute many jobs at the same time.
+ * execution. consumer_worker can execute many jobs at the same time.
  * @global
- * @name Worker
+ * @name consumer_worker
  */
 
 var db = new Database();
